@@ -1,9 +1,9 @@
 import { Button, Grid, Typography } from "@mui/material"
 import { useEffect, useState } from "react"
 
-const postBody=(title,para,emotion,date,duration,view)=>(
+const PostBody = ({title, para, emotion, date, duration, view}) => (
     <Grid>
-        <Typography variant="h2">
+        <Typography variant="h4">
             {title}
         </Typography>
         <Typography variant="body1">
@@ -18,35 +18,43 @@ const postBody=(title,para,emotion,date,duration,view)=>(
     </Grid>
 )
 
-const ContentBody=()=>{
+const ContentBody = () => {
 
-    const [postData,setPostData] = useState([]);
-    useEffect(()=>{
-        fetch("./assets/postdata.json")
-        .then((res)=> res.json())
-        .then((data)=> setPostData(data));
-    },[]);
+    const [postData, setPostData] = useState([]);
+    useEffect(() => {
+        fetch(process.env.PUBLIC_URL + './postdata.json')
+            .then((res) =>
+                res.json()
+            )
+            .then((data) => {
+                setPostData(data.posts);
 
-    return(
+            });
+
+    }, []);
+
+    return (
         <>
-        <Button sx={{height:"50px",width:"60px"}}>
-            Post
-        </Button>
-        {postData.map((data,index)=>{
-            
-            <postBody
-                key={index}
-                title={data.title}
-                para={data.para}
-                emotion={data.emotion}
-                date={data.Date}
-                duration={data.Duration}
-                view={data.View}
-            />
-        })
+            <Button sx={{ height: "50px", width: "60px" }}>
+                Post
+            </Button>
+            <Grid>
+                {console.log(postData)}
+                {postData.map((data, index) => {
+                 return (
+                    <PostBody
+                        key={index}
+                        title={data.title}
+                        para={data.para}
+                        emotion={data.emotion}
+                        date={data.Date}
+                        duration={data.Duration}
+                        view={data.View}
+                    />
+                 );
+                })}
+            </Grid>
 
-        }
-        
         </>
     )
 }
