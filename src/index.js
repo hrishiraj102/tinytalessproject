@@ -5,16 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ContentBody from './Components/ContentBody';
 import Profile from './Components/Profile';
-import { Grid } from '@mui/material';
+import { Container, Grid } from '@mui/material';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+     
     <Grid>
+     
     <Profile />
     </Grid>
-    <Grid>
-    <ContentBody />
+    <Grid mt={5}>
+    <ContentBody  />
+   
     </Grid>
     
   </React.StrictMode>

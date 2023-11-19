@@ -10,7 +10,7 @@ const Profile = () => {
 
         <div>
             <Grid>
-                <img src='logo192.png' alt="Cover Pic" position="absolute" width="100%" height="200" />
+                <img src='coverimgt.jpeg' alt="Cover Pic" position="absolute" width="100%" height="200" />
             </Grid>
             <Grid container direction="row">
                 <Box
@@ -24,7 +24,7 @@ const Profile = () => {
                         overflow: "hidden",
                         position: "relative",
                         bottom: "50px",
-                        left: "40px"
+                        left: "25px"
                     }}
                 />
 
@@ -60,8 +60,8 @@ const Profile = () => {
             </Grid>
 
             {/* About me & link */}
-            <Grid>
-                <Typography variant="h5">Co-founder & CEO at Terribly Tiny Tales</Typography>
+            <Grid ml={2}>
+                <Typography variant="body1" >Co-founder & CEO at Terribly Tiny Tales</Typography>
                 <Link href='http://www.instagram.com/anujgosalia'> http://www.instagram.com/anujgosalia</Link>
             </Grid>
         </div>

@@ -1,21 +1,33 @@
-import { Button, Grid, Typography } from "@mui/material"
+import { Box, Button, Divider, Grid, Typography, colors } from "@mui/material"
 import { useEffect, useState } from "react"
 
 const PostBody = ({title, para, emotion, date, duration, view}) => (
-    <Grid>
-        <Typography variant="h4">
-            {title}
+   <>
+  
+   <Grid container direction="column" marginLeft={2} width={"98%"} >
+        <Typography variant="body1" paddingTop="30px"><b>
+            {title}</b>
         </Typography>
-        <Typography variant="body1">
+        <Grid>
+        <Typography variant="body1" paddingTop="20px"  style={{ whiteSpace: 'pre-line' }} >
             {para}
         </Typography>
+        </Grid>
+        <Grid container direction="row"  justifyContent="space-between" alignItems="center"  mt={ "30px"} >
         <Typography variant="caption">
-            {emotion} by anujgosalia
+           <Typography variant="caption" color={"skyblue"}><b>{emotion}</b></Typography> by anujgosalia
         </Typography>
-        <Typography variant="caption">
+    
+        <Typography variant="caption"   sx={{textAlign: 'right', color: "#c9c9c9",marginTop: 'auto',marginRight: 3} }>
             {date} . {duration} mins Read . {view} Views
         </Typography>
+        </Grid>
+
+        
+       
     </Grid>
+    <Divider sx={{ mt: 2, Color: "#c9c9c9" }} />
+    </>
 )
 
 const ContentBody = () => {
@@ -35,9 +47,11 @@ const ContentBody = () => {
 
     return (
         <>
-            <Button sx={{ height: "50px", width: "60px" }}>
-                Post
-            </Button>
+        
+            <Box sx={{ height: "50px", width: "100px" ,display:'flex',alignItems:'center',justifyContent: 'center',color: "skyblue",border: "solid",borderColor: "#c9c9c9", borderBottom: 0, borderLeft:0,borderRadius:0 }}>
+                <b>134 Posts</b>
+            </Box>
+            <Divider sx={{  ml:"100px",Color: "#c9c9c9" }} />
             <Grid>
                 {console.log(postData)}
                 {postData.map((data, index) => {
