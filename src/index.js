@@ -6,13 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import ContentBody from './Components/ContentBody';
 import Profile from './Components/Profile';
 import { Container, Grid } from '@mui/material';
+import Heading from './Components/Heading';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      
     <Grid>
-     
+    <Heading />
     <Profile />
     </Grid>
     <Grid mt={5}>

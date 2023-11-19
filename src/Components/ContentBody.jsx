@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 const PostBody = ({title, para, emotion, date, duration, view}) => (
    <>
   
-   <Grid container direction="column" marginLeft={2} width={"98%"} >
+   <Grid container direction="column" paddingLeft={1} width={"98%"} paddingRight={1} >
         <Typography variant="body1" paddingTop="30px"><b>
             {title}</b>
         </Typography>
