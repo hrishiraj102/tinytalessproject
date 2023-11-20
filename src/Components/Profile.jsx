@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Link, Typography } from "@mui/material";
+import { Box, Grid, Link, Typography } from "@mui/material";
 
 
 
@@ -29,32 +29,32 @@ const Profile = () => {
                 />
 
                 <Grid>
-                <Typography variant="h6" position={"relative"} mt={2} sx={{left: "50px"}}><b>Anuj Gosalia</b></Typography>
+                    <Typography variant="h6" position={"relative"} mt={2} sx={{ left: "50px" }}><b>Anuj Gosalia</b></Typography>
 
 
-                {/* Followers  */}
-                <Grid container direction="row">
-                <Grid sx={{position: "relative",left: "50px"}} align={"center"}>
-                    <Box sx={{borderStyle:"solid", borderColor:"#c9c9c9",borderRadius:2}}>
-                        <Typography variant="button">
-                            6482
-                        </Typography>
-                    </Box>
-                    <Typography variant="caption">Followers</Typography>
-                </Grid>
+                    {/* Followers  */}
+                    <Grid container direction="row">
+                        <Grid sx={{ position: "relative", left: "50px" }} align={"center"}>
+                            <Box sx={{ borderStyle: "solid", borderColor: "#c9c9c9", borderRadius: 2 }}>
+                                <Typography variant="button">
+                                    6482
+                                </Typography>
+                            </Box>
+                            <Typography variant="caption">Followers</Typography>
+                        </Grid>
 
-                <Grid sx={{position: "relative",left: "70px"}} align={"center"}>
-                    <Box sx={{borderStyle:"solid", borderColor:"#c9c9c9",borderRadius:2}}>
-                        <Typography variant="button">
-                            245
-                        </Typography>
-                    </Box>
-                    <Box>
-                    <Typography variant="caption" >Following</Typography>
-                    </Box>
-                   
-                </Grid>
-                </Grid>
+                        <Grid sx={{ position: "relative", left: "70px" }} align={"center"}>
+                            <Box sx={{ borderStyle: "solid", borderColor: "#c9c9c9", borderRadius: 2 }}>
+                                <Typography variant="button">
+                                    245
+                                </Typography>
+                            </Box>
+                            <Box>
+                                <Typography variant="caption" >Following</Typography>
+                            </Box>
+
+                        </Grid>
+                    </Grid>
                 </Grid>
 
             </Grid>

@@ -12,16 +12,16 @@ const Heading = () => {
                         <Box height={40} borderLeft={1} borderColor="#f6c359" mx={2} />
                     </Grid>
 
-                  
+
                     <Grid >
                         <Typography variant="h6" sx={{ color: 'white' }}>
                             STORIES
                         </Typography>
                     </Grid>
 
-                  
+
                     <Grid sx={{ marginLeft: 'auto', marginRight: '5%' }}>
-                        <Button variant="contained"  sx={{background: "#f6c359",color:"black",}} >
+                        <Button variant="contained" sx={{ background: "#f6c359", color: "black", }} >
                             Courses
                         </Button>
                     </Grid>
