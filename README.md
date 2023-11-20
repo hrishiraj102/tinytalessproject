@@ -1,4 +1,7 @@
 
+## Demo
+
+To view a live demo of the project, click on the following link: https://effortless-alfajores-eea97d.netlify.app
 
 ## Overview
 
@@ -50,12 +53,6 @@ To run the project locally, follow these steps:
 - React.js
 - Material-UI
 
-## Issues and Contributions
 
-If you encounter any issues or would like to contribute to the project, please open an issue or submit a pull request on the GitHub repository.
 
-## Demo
 
-To view a live demo of the project, click on the following link: [#insert_link_here]
-
-Feel free to customize this README to better fit your project's details and specific instructions.
